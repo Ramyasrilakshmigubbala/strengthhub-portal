@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ArrowRight, Calendar, Clock, Dumbbell, Users } from 'lucide-react';
@@ -66,6 +65,8 @@ const Programs = () => {
     { id: 'specialty', name: 'Specialty Programs' },
   ];
 
+  const [activeCategory, setActiveCategory] = useState('all');
+
   const programs = [
     {
       title: "Personal Training",
@@ -117,6 +118,27 @@ const Programs = () => {
     },
   ];
 
+  const filteredPrograms = activeCategory === 'all' 
+    ? programs 
+    : programs.filter(program => {
+        switch(activeCategory) {
+          case 'strength':
+            return program.category === 'Strength & Conditioning';
+          case 'cardio':
+            return program.category === 'Cardio & HIIT';
+          case 'weightloss':
+            return program.category === 'Weight Loss';
+          case 'group':
+            return program.category === 'Group Classes';
+          case 'personal':
+            return program.category === 'Personal Training';
+          case 'specialty':
+            return program.category === 'Specialty Programs';
+          default:
+            return true;
+        }
+      });
+
   return (
     <div className="min-h-screen bg-gym-dark text-white">
       <Navbar />
@@ -154,10 +176,11 @@ const Programs = () => {
                   <button
                     key={category.id}
                     className={`px-6 py-2 rounded-full font-medium transition-colors ${
-                      category.id === 'all' 
+                      category.id === activeCategory 
                         ? 'bg-gym-red text-white' 
                         : 'bg-gym-gray text-white hover:bg-gym-red/20'
                     }`}
+                    onClick={() => setActiveCategory(category.id)}
                   >
                     {category.name}
                   </button>
@@ -167,7 +190,7 @@ const Programs = () => {
 
             {/* Programs Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {programs.map((program, index) => (
+              {filteredPrograms.map((program, index) => (
                 <ProgramCard 
                   key={index}
                   title={program.title}

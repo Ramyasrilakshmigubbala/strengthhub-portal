@@ -36,8 +36,8 @@ const HeroSection = () => {
             <Link to="/programs" className="btn-outline">
               Explore Programs
             </Link>
-            <Link to="/pricing" className="btn-secondary">
-              View Pricing
+            <Link to="/contact" className="btn-secondary">
+              Book a Free Tour
             </Link>
           </div>
         </div>

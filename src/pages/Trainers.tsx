@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface TrainerProps {
   image: string;
@@ -77,9 +78,9 @@ const TrainerProfile = ({ image, name, role, bio, specialties, certifications, s
           </div>
         </div>
         
-        <button className="btn-primary mt-6">
+        <Link to="/contact" className="btn-primary mt-6">
           Book a Session
-        </button>
+        </Link>
       </div>
     </div>
   );

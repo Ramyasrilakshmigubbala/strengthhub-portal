@@ -56,7 +56,7 @@ const Facilities = () => {
       icon: <Heart size={32} />,
       title: "Recovery & Mobility Zone",
       description: "Recovery is as important as training. Our specialized recovery zone includes foam rolling stations, stretching areas with assisted stretch equipment, percussion therapy devices, and compression recovery systems to help you recover faster and prevent injuries.",
-      imageUrl: "https://images.unsplash.com/photo-1591543620767-582b2eb22075?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
     },
     {
       icon: <Users size={32} />,
@@ -68,7 +68,7 @@ const Facilities = () => {
       icon: <Droplets size={32} />,
       title: "Premium Locker Rooms",
       description: "Our luxurious locker rooms feature private changing areas, secure lockers with digital locks, rainfall showers with premium products, and grooming stations with everything you need to look your best after your workout.",
-      imageUrl: "https://images.unsplash.com/photo-1545171709-49c70df16a53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
     },
     {
       icon: <Coffee size={32} />,

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Dumbbell, Heart, Zap, Clock, Coffee, Shower } from 'lucide-react';
+import { Dumbbell, Heart, Zap, Clock, Coffee, Droplets } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface FacilityCardProps {
@@ -54,7 +54,7 @@ const FacilitiesSection = () => {
             description="Premium nutrition bar serving protein shakes, healthy snacks, and performance supplements."
           />
           <FacilityCard 
-            icon={<Shower size={36} />}
+            icon={<Droplets size={36} />}
             title="Luxury Amenities"
             description="Premium locker rooms with towel service, saunas, and luxury shower products."
           />
